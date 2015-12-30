@@ -9,13 +9,13 @@
 #ifndef constants_h
 #define constants_h
 
-#define WINDOW_WIDTH        500
+#define WINDOW_WIDTH        600
 #define WINDOW_HEIGHT       300
 
 #define BOARD_WIDTH         300
 #define BOARD_HEIGHT        300
 
-#define ROWS                4
-#define COLS                4
+#define ROWS                10
+#define COLS                10
 
 #endif /* constants_h */

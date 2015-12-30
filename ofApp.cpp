@@ -6,7 +6,6 @@
 void ofApp::setup(){
     ofBackground(255);
     game = Game(BOARD_WIDTH,BOARD_HEIGHT,ROWS,COLS);
-
 }
 
 //--------------------------------------------------------------
@@ -17,6 +16,14 @@ void ofApp::update(){
 //--------------------------------------------------------------
 void ofApp::draw(){
     game.drawBoard();
+    
+    ofDrawBitmapString("Current player to move: TODO (X)", BOARD_WIDTH + 20, 60);
+    ofDrawBitmapString("Score player X: TODO", BOARD_WIDTH + 20, 80);
+    ofDrawBitmapString("Score player O: TODO", BOARD_WIDTH + 20, 100);
+    
+    ofDrawBitmapString("DEBUG INFO", BOARD_WIDTH + 20, 140);
+    ofDrawBitmapString("Rows: " + ofToString(ROWS), BOARD_WIDTH + 20, 160);
+    ofDrawBitmapString("Columns: " + ofToString(COLS), BOARD_WIDTH + 20, 180);
 
 }
 
