@@ -15,7 +15,7 @@
 #define BOARD_WIDTH         300
 #define BOARD_HEIGHT        300
 
-#define ROWS                10
-#define COLS                10
+#define ROWS                3
+#define COLS                3
 
 #endif /* constants_h */

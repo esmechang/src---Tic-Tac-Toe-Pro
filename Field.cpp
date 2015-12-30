@@ -30,9 +30,7 @@ void Field::updateField(int c) {
 
 // need to do this in draw
 void Field::drawField() {
-    
-    std::cout<<value;
-    
+        
     float offset = 20;
 
     ofFill();

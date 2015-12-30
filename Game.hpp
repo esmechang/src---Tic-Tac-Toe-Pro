@@ -26,6 +26,7 @@ public:
     int rows,cols;
     bool toggle;
     bool checkGameOver();
+    bool checkIfWinner(); 
 
 
     

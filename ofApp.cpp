@@ -24,6 +24,10 @@ void ofApp::draw(){
     ofDrawBitmapString("DEBUG INFO", BOARD_WIDTH + 20, 140);
     ofDrawBitmapString("Rows: " + ofToString(ROWS), BOARD_WIDTH + 20, 160);
     ofDrawBitmapString("Columns: " + ofToString(COLS), BOARD_WIDTH + 20, 180);
+    ofDrawBitmapString("is there a winner? " + ofToString(game.checkIfWinner()), BOARD_WIDTH + 20, 200);
+
+    
+    
 
 }
 

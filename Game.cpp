@@ -71,3 +71,28 @@ bool Game::checkGameOver() {
     }
     return true;
 }
+
+bool Game::checkIfWinner() {
+
+    //check horizontal
+    for(int y = 0; y < ROWS; y++) {
+        int x=0;
+        while (field[x][y].value == field[x+1][y].value) {
+            x++;
+        }
+        if (x >= COLS -1) { // -1 cause x starts at zero
+            return true;    // there is a horizontal winner!
+        }
+    }
+    
+    //check vertical
+    for(int x = 0; x < ROWS; x++) {
+        int y=0;
+        while (field[x][y].value == field[x][y+1].value) {
+            y++;
+        }
+        if (y >= ROWS -1) { // -1 cause y starts at zero
+            return true;    // there is a vertical winner!
+        }
+    }
+}
